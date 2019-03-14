@@ -1,5 +1,3 @@
-<style>
-
 /* Whack */
 
 /* Gives a color to the W logo on top left in order to remember you're currently hacking the UI */
@@ -99,6 +97,19 @@ div[data-automation-id=PositionBody] {
     grid-template-columns: 0px auto;
 }
 
+/* Adds a padding to the bottom of the panel */
+
+div [data-automation-id=Effects] {
+    padding-bottom: 30px;
+}
+
+div [data-automation-id=Effects]::after {
+    content: "♥‿♥";
+    margin: 0 auto;
+    padding-top: 20px
+;
+}
+
 /* Specific for inmporting CSV data in CMS — adds padding to the bottom and enlarge drop down menus */
 
 /* makes drop down menu taller */
@@ -127,4 +138,3 @@ div[data-automation-id=PositionBody] {
 
 /* END of Import CSV stuff */
 
-</style>
