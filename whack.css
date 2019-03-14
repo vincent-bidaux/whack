@@ -1,0 +1,130 @@
+<style>
+
+/* Whack */
+
+/* Gives a color to the W logo on top left in order to remember you're currently hacking the UI */
+
+.bem-DesignerLogo_Icon {
+    color: #F06292 ;
+}
+
+/* Nukes the bg color of labels */
+
+div[name] {
+    background: none;
+}
+
+/* Increase the contrast of 4 ways Spacing and Position UI */
+
+path[cursor=w-resize] {
+    color: #5e5e5e;
+}
+
+path[cursor=n-resize] {
+    color: #2b2b2b;
+}
+
+path[cursor=s-resize] {
+    color: #2b2b2b;
+}
+
+path[cursor=e-resize] {
+    color: #5e5e5e;
+}
+
+/* Changes the labels: align them to the right, change their weight to 600 and their font to San Francisco */
+
+div[name=fontFamily], div[name=fontWeight], div[name=fontSize], div[name=lineHeight], div[name=colorLabel], div[name=textAlign], div[name=fontFamily], div[name=width], div[name=height], div[name=minWidth], div[name=minHeight], div[name=maxWidth], div[name=maxHeight] {
+    justify-self: right;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+}
+
+/* Nukes some labels */
+
+div[name=display], div[name=flexDirection], div[name=alignItems], div[name=justifyContent], div[name=position], div[name=flexWrap] {
+    opacity: 0;
+}
+
+/* Nukes the first columns of the gris where the nuked labels were sitting */
+
+div[data-automation-id=Layout] div:nth-child(2) {
+    grid-template-columns: 0px 1fr;
+}
+
+/* Makes some of the effects function more ditinguishable */
+
+/* Transforms */
+
+div[data-automation-id=Effects] div:nth-child(2) div:nth-child(6) {
+    background-color: rgba(248, 155, 68, 0.25);
+    border-radius: 4px;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Transitions */
+
+div[data-automation-id=Effects] div:nth-child(2) div:nth-child(8) {
+    background-color: rgba(68, 215, 248, 0.25);
+    border-radius: 4px;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Changes the style of the sections's headers text */
+
+div[data-automation-id=Header] div {
+    /* border: solid 2px #8e44ad; */
+    /* background-color:white; */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #B0BEC5;
+    font-size: 11px;
+    line-height: 11px;
+}
+
+/* Changes the style of the sections's headers block */
+
+div[data-automation-id=Header] {
+    height: 18px;
+}
+
+/* Nukes the PADDING and MARGIN labels on the Spacing 4 ways UI */
+
+div[data-automation-id=Spacing] div svg text {
+    display: none;
+}
+
+/* Nukes the first column of the grid where we deleted labels, in Position section */
+
+div[data-automation-id=PositionBody] {
+    grid-template-columns: 0px auto;
+}
+
+/* Specific for inmporting CSV data in CMS — adds padding to the bottom and enlarge drop down menus */
+
+/* makes drop down menu taller */
+
+/*
+.bem-SelectInput_Menu {
+    max-height: 710px;
+}
+*/
+
+/* makes switches more visible */
+
+/*
+.bem-Switch {
+    border-bottom: red solid 3px;
+}
+*/
+
+/* adds a padding on bottom of the import panel to avoid losing the taller menu */
+
+/*
+.kit-sidebar-tab.div:nth-child(2) {
+    padding-bottom: 250px;
+}
+*/
+
+/* END of Import CSV stuff */
+
+</style>
