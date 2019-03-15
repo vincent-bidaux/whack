@@ -32,7 +32,7 @@ path[cursor=e-resize] {
 
 /* Changes the labels: align them to the right, change their weight to 600 and their font to San Francisco */
 
-div[name=fontFamily], div[name=fontWeight], div[name=fontSize], div[name=lineHeight], div[name=colorLabel], div[name=textAlign], div[name=fontFamily], div[name=width], div[name=height], div[name=minWidth], div[name=minHeight], div[name=maxWidth], div[name=maxHeight] {
+div[name=fontFamily], div[name=fontWeight], div[name=fontSize], div[name=lineHeight], div[name=colorLabel], div[name=textAlign], div[name=fontFamily], div[name=width], div[name=height], div[name=minWidth], div[name=minHeight], div[name=maxWidth], div[name=maxHeight], div[name=flex], div[name=alignSelf], div[name=order] {
     justify-self: right;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 600;
@@ -106,8 +106,14 @@ div [data-automation-id=Effects] {
 div [data-automation-id=Effects]::after {
     content: "♥‿♥";
     margin: 0 auto;
-    padding-top: 20px
-;
+    padding-top: 20px;
+}
+
+/* Adds a background to the Background section */
+
+div [data-automation-id=Backgrounds] {
+    background-color: rgba(248, 155, 68, 0.25);
+    padding: 0 0 0 0;
 }
 
 /* Specific for inmporting CSV data in CMS — adds padding to the bottom and enlarge drop down menus */
