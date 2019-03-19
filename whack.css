@@ -1,18 +1,22 @@
 /* Whack */
 
+/* This is a demo about how you can inject CSS code to take over an online app UI in oder to customize it. It's for educational purpose. Don't use it for production. It can beak the app functionalities. Use at your own risks. */
+
+/* Usage: use a user-code Chrome extension such as Styebot to inject this CSS code. */
+
 /* Gives a color to the W logo on top left in order to remember you're currently hacking the UI */
 
 .bem-DesignerLogo_Icon {
-    color: #F06292 ;
+    color: #81C784 ;
 }
 
-/* Nukes the bg color of labels */
+/* Removes the colored bg on labels */
 
 div[name] {
     background: none;
 }
 
-/* Increase the contrast of 4 ways Spacing and Position UI */
+/* Increases the contrast of 4 ways Spacing and Position UI */
 
 path[cursor=w-resize] {
     color: #5e5e5e;
@@ -38,13 +42,13 @@ div[name=fontFamily], div[name=fontWeight], div[name=fontSize], div[name=lineHei
     font-weight: 600;
 }
 
-/* Nukes some labels */
+/* Hides some labels */
 
 div[name=display], div[name=flexDirection], div[name=alignItems], div[name=justifyContent], div[name=position], div[name=flexWrap] {
     opacity: 0;
 }
 
-/* Nukes the first columns of the gris where the nuked labels were sitting */
+/* Zeroes the first columns of the gris where the nuked labels were sitting */
 
 div[data-automation-id=Layout] div:nth-child(2) {
     grid-template-columns: 0px 1fr;
@@ -61,13 +65,13 @@ div[data-automation-id=Header] div {
     line-height: 11px;
 }
 
-/* Nukes the PADDING and MARGIN labels on the Spacing 4 ways UI */
+/* Hide the PADDING and MARGIN all caps italics labels on the Spacing 4 ways UI */
 
 div[data-automation-id=Spacing] div svg text {
     display: none;
 }
 
-/* Nukes the first column of the grid where we deleted labels, in Position section */
+/* Zeroes the first column of the grid where we deleted labels, in Position section */
 
 div[data-automation-id=PositionBody] {
     grid-template-columns: 0px auto;
@@ -79,27 +83,51 @@ div [data-automation-id=Effects] {
     padding-bottom: 30px;
 }
 
+/* Adds textmoji symbol at the bottom of the panel */
+
 div [data-automation-id=Effects]::after {
     content: "♥‿♥";
     margin: 0 auto;
     padding-top: 20px;
 }
 
-/* Adds a background to the Background section */
+/* Adds a background color to the Background section */
 
 div [data-automation-id=Backgrounds] {
     background-color: #5D4037;
     padding: 0 0 0 0;
 }
 
-/* Adds a background to the Background section */
+/* Adds a background color to the Typography section */
 
 div [data-automation-id=Typography] {
     background-color: #455A64;
     padding: 0 0 0 0;
 }
 
-/* Makes some of the effects function more ditinguishable */
+/* Restyle the Effects panel to add variety */
+
+/* Enlarges the + buttons of the Effects areas of the Effects panel */
+
+div [tooltip="Add drop shadow, inner or outer glow, or highlights"], div [tooltip="Add filters to blur elements or alter colors."], div [tooltip="Add transforms to translate, scale, rotate, or skew elements."], div [tooltip="Add transitions to make changes between element states less abrupt"] {
+    background-color: #616161;
+    width: 50px;
+}
+
+
+/* Hides horizontal rulers */
+
+div[data-automation-id=Effects] > div:nth-child(2) > div:nth-child(3), div[data-automation-id=Effects] > div:nth-child(2) > div:nth-child(5), div[data-automation-id=Effects] > div:nth-child(2) > div:nth-child(7), div[data-automation-id=Effects] > div:nth-child(2) > div:nth-child(9), div[data-automation-id=Effects] > div:nth-child(2) > div:nth-child(11) {
+    opacity: 0;
+}
+
+/* Box Shadows */
+
+div[data-automation-id=Effects] > div:nth-child(2) > div:nth-child(4) {
+    background-color: #4f4f4f;
+    border-radius: 4px;
+    padding: 10px 10px 10px 10px;
+}
 
 /* Transforms */
 
@@ -117,39 +145,41 @@ div[data-automation-id=Effects] div:nth-child(2) div:nth-child(8) {
     padding: 10px 10px 10px 10px;
 }
 
+/* filters */
+
+div[data-automation-id=Effects] > div:nth-child(2) > div:nth-child(10) {
+    background-color: #4f4f4f;
+    border-radius: 4px;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Moves Transforms area option button */
+
+div[data-automation-id=Effects] div[data-automation-id=Header] + div div:nth-child(6) div div:nth-child(2)[style] {
+    right: 32px;
+}
+
+div[data-automation-id=Effects] div[data-automation-id=Header] + div div:nth-child(6) div div:nth-child(2)[draggable=true] {
+    right: 0;
+}
+
 /* Changes the style of the sections's headers block */
 
 div[data-automation-id=Header] {
 }
 
+/* Set minimal opacity for the subhaders of the secondary areas */
+
 div[align=center] {
     opacity: 0.2;
 }
 
-/* Nukes the max-height of the swatches palette to remove the scroll */
+/* Deactivates the max-height of the swatches palette to remove the scroll */
 
 div [data-automation-id=overlay] div div div div div:nth-child(3) {
     max-height: inherit;
 }
 
-/* Enlarge the + buttons */
-
-div [tooltip="Add drop shadow, inner or outer glow, or highlights"], div [tooltip="Add filters to blur elements or alter colors."], div [tooltip="Add transforms to translate, scale, rotate, or skew elements."], div [tooltip="Add transitions to make changes between element states less abrupt"] {
-    background-color: #616161;
-    width: 50px;
-}
-
-/* Displaces 2 of the + buttons */
-
-div [tooltip="Add drop shadow, inner or outer glow, or highlights"], div [tooltip="Add filters to blur elements or alter colors."] {
-    margin-right: 10px;
-}
-
-/* Alters the grid inside of the Transforms section bar in order to increase the cell of the + button */
-
-div[data-automation-id=Effects] div:nth-child(2) div:nth-child(6) div div:nth-child(1) {
-    grid-template-columns: 44px 44px auto 20px 60px;
-}
 
 /* Specific for inmporting CSV data in CMS — adds padding to the bottom and enlarge drop down menus */
 
