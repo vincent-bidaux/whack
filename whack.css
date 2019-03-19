@@ -50,24 +50,6 @@ div[data-automation-id=Layout] div:nth-child(2) {
     grid-template-columns: 0px 1fr;
 }
 
-/* Makes some of the effects function more ditinguishable */
-
-/* Transforms */
-
-div[data-automation-id=Effects] div:nth-child(2) div:nth-child(6) {
-    background-color: rgba(248, 155, 68, 0.25);
-    border-radius: 4px;
-    padding: 10px 10px 10px 10px;
-}
-
-/* Transitions */
-
-div[data-automation-id=Effects] div:nth-child(2) div:nth-child(8) {
-    background-color: rgba(68, 215, 248, 0.25);
-    border-radius: 4px;
-    padding: 10px 10px 10px 10px;
-}
-
 /* Changes the style of the sections's headers text */
 
 div[data-automation-id=Header] div {
@@ -77,12 +59,6 @@ div[data-automation-id=Header] div {
     color: #B0BEC5;
     font-size: 11px;
     line-height: 11px;
-}
-
-/* Changes the style of the sections's headers block */
-
-div[data-automation-id=Header] {
-    height: 18px;
 }
 
 /* Nukes the PADDING and MARGIN labels on the Spacing 4 ways UI */
@@ -112,8 +88,67 @@ div [data-automation-id=Effects]::after {
 /* Adds a background to the Background section */
 
 div [data-automation-id=Backgrounds] {
-    background-color: rgba(248, 155, 68, 0.25);
+    background-color: #5D4037;
     padding: 0 0 0 0;
+}
+
+/* Adds a background to the Background section */
+
+div [data-automation-id=Typography] {
+    background-color: #455A64;
+    padding: 0 0 0 0;
+}
+
+/* Makes some of the effects function more ditinguishable */
+
+/* Transforms */
+
+div[data-automation-id=Effects] div:nth-child(2) div:nth-child(6) {
+    background-color: #455A64;
+    border-radius: 4px;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Transitions */
+
+div[data-automation-id=Effects] div:nth-child(2) div:nth-child(8) {
+    background-color: #5D4037;
+    border-radius: 4px;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Changes the style of the sections's headers block */
+
+div[data-automation-id=Header] {
+}
+
+div[align=center] {
+    opacity: 0.2;
+}
+
+/* Nukes the max-height of the swatches palette to remove the scroll */
+
+div [data-automation-id=overlay] div div div div div:nth-child(3) {
+    max-height: inherit;
+}
+
+/* Enlarge the + buttons */
+
+div [tooltip="Add drop shadow, inner or outer glow, or highlights"], div [tooltip="Add filters to blur elements or alter colors."], div [tooltip="Add transforms to translate, scale, rotate, or skew elements."], div [tooltip="Add transitions to make changes between element states less abrupt"] {
+    background-color: #616161;
+    width: 50px;
+}
+
+/* Displaces 2 of the + buttons */
+
+div [tooltip="Add drop shadow, inner or outer glow, or highlights"], div [tooltip="Add filters to blur elements or alter colors."] {
+    margin-right: 10px;
+}
+
+/* Alters the grid inside of the Transforms section bar in order to increase the cell of the + button */
+
+div[data-automation-id=Effects] div:nth-child(2) div:nth-child(6) div div:nth-child(1) {
+    grid-template-columns: 44px 44px auto 20px 60px;
 }
 
 /* Specific for inmporting CSV data in CMS — adds padding to the bottom and enlarge drop down menus */
