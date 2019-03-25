@@ -36,23 +36,25 @@ path[cursor=e-resize] {
 
 /* Changes the labels: align them to the right, change their weight to 600 and their font to San Francisco */
 
-div[name=fontFamily], div[name=fontWeight], div[name=fontSize], div[name=lineHeight], div[name=colorLabel], div[name=textAlign], div[name=fontFamily], div[name=width], div[name=height], div[name=minWidth], div[name=minHeight], div[name=maxWidth], div[name=maxHeight], div[name=flex], div[name=alignSelf], div[name=order] {
+div[name=fontFamily], div[name=fontWeight], div[name=fontSize], div[name=lineHeight], div[name=colorLabel], div[name=textAlign], div[name=fontFamily], div[name=width], div[name=height], div[name=minWidth], div[name=minHeight], div[name=maxWidth], div[name=maxHeight], div[name=flex], div[name=alignSelf], div[name=order],div[name=display], div[name=flexDirection], div[name=alignItems], div[name=justifyContent], div[name=position], div[name=flexWrap] {
     justify-self: right;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 600;
 }
 
-/* Hides some labels */
+/* Hides some labels 
 
 div[name=display], div[name=flexDirection], div[name=alignItems], div[name=justifyContent], div[name=position], div[name=flexWrap] {
     opacity: 0;
 }
+*/
 
-/* Zeroes the first columns of the gris where the nuked labels were sitting */
+/* Zeroes the first columns of the gris where the nuked labels were sitting 
 
 div[data-automation-id=Layout] div:nth-child(2) {
     grid-template-columns: 0px 1fr;
 }
+*/
 
 /* Changes the style of the sections's headers text */
 
@@ -113,7 +115,6 @@ div [tooltip="Add drop shadow, inner or outer glow, or highlights"], div [toolti
     background-color: #616161;
     width: 50px;
 }
-
 
 /* Hides horizontal rulers */
 
@@ -179,7 +180,6 @@ div[align=center] {
 div [data-automation-id=overlay] div div div div div:nth-child(3) {
     max-height: inherit;
 }
-
 
 /* Specific for inmporting CSV data in CMS — adds padding to the bottom and enlarge drop down menus */
 
