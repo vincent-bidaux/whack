@@ -36,8 +36,16 @@ path[cursor=e-resize] {
 
 /* Changes the labels: align them to the right, change their weight to 600 and their font to San Francisco */
 
-div[name=fontFamily], div[name=fontWeight], div[name=fontSize], div[name=lineHeight], div[name=colorLabel], div[name=textAlign], div[name=fontFamily], div[name=width], div[name=height], div[name=minWidth], div[name=minHeight], div[name=maxWidth], div[name=maxHeight], div[name=flex], div[name=alignSelf], div[name=order],div[name=display], div[name=flexDirection], div[name=alignItems], div[name=justifyContent], div[name=position], div[name=flexWrap] {
+div[name=fontFamily], div[name=fontWeight], div[name=fontSize], div[name=lineHeight], div[name=colorLabel], div[name=textAlign], div[name=fontFamily], div[name=width], div[name=height], div[name=minWidth], div[name=minHeight], div[name=maxWidth], div[name=maxHeight], div[name=flex], div[name=alignSelf], div[name=order],div[name=display], div[name=flexDirection], div[name=alignItems], div[name=justifyContent], div[name=position], div[name=flexWrap], div[name=borderRadius], div[name=backgroundColor]{
     justify-self: right;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+}
+
+/* Changes the labels of the Effects areas */
+
+div[name=boxShadows], div[name=transforms], div[name=transitions], div[name=filters], div[name=opacity], div[name=cursor], div[name=border], div[name=textShadows], div[name=backgrounds]{
+    justify-self: left;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 600;
 }
