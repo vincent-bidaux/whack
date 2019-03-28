@@ -1,6 +1,6 @@
 # whack
 
-Alternative styling for the 2019 Style panel UI of the Webflow Designer app.
+Experiment styling for the 2019 Style panel UI of the Webflow Designer app.
 
 Makes some labels disappear, enlarge some items, give some items some colors to differenciate them, increase the contrast on some UI items. Text labels are styled in San Francisco, with a heavier weight and an alignment to their respective field.
 
