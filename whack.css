@@ -189,7 +189,65 @@ div[data-automation-id=overlay] div div div div div:nth-child(3) {
     max-height: inherit;
 }
 
-/* Specific for inmporting CSV data in CMS — adds padding to the bottom and enlarge drop down menus */
+
+/*  ===== LEFT panels styling ===== */
+
+/* Make the Pages panel larger */
+
+#designer-app-react-mount div div div.bem-LeftSidebarPanels div.bem-Panel div.bem-Pane {
+    flex-basis: 600px;
+}
+
+/* Makes the Pages Links dropdown as tall as possible */
+
+.fancy-dropdown {
+    max-height: none;
+}
+
+/* Makes the Navigator shorter to make room for the docked CSS Preview popup */
+
+div#right-sidebar + div {height: calc(100vh - 460px);}
+
+/* Docks the CSS Preview popup. Warning, need to inject JS to make the Navigator panel larger */
+
+div[coords="[object Object]"] {
+    bottom:0;
+    top:inherit;
+    left:34px;
+    box-shadow:none;
+    border-radius:0;
+    width:401px;
+    height:425px
+    display: grid;
+    }
+
+/*  ===== CURRENT Styling somee areas in a different way ===== */
+
+/* Make the area a round cornered magined thing */
+
+div [data-automation-id="Size"], div [data-automation-id="Typography"], div [data-automation-id="Positio"] {
+    background-color: #242424;
+    padding: 0px;
+    margin: 0 8px 8px 8px;
+    border-radius: 6px;
+    border: 0;
+}
+
+/* Unstyle the area title bar */
+
+div[data-automation-id="Size"] div[data-automation-id="Header"], div[data-automation-id="Typography"] div[data-automation-id="Header"] {
+    background-color: transparent;
+    color: #4a4a4a;
+}
+
+/* Remove the bottom border of some areas */
+
+div [data-automation-id="Spacing"] > div:nth-child(2) + div, div [data-automation-id="Size"] > div:nth-child(2) + div, div [data-automation-id="Typography"] > div:nth-child(2) + div, div [data-automation-id="Position"] > div:nth-child(2) + div {
+    display: none;
+}
+
+
+/*  ===== Specific for inmporting CSV data in CMS — adds padding to the bottom and enlarge drop down menus ===== */
 
 /* makes drop down menu taller */
 
@@ -215,30 +273,4 @@ div[data-automation-id=overlay] div div div div div:nth-child(3) {
 }
 */
 
-/* END of Import CSV stuff */
-
-/* CURRENT Styling somee areas in a different way */
-
-/* Make the area a round cornered magined thing */
-
-div [data-automation-id="Size"], div [data-automation-id="Typography"], div [data-automation-id="Positio"] {
-    background-color: #242424;
-    padding: 0px;
-    margin: 0 8px 8px 8px;
-    border-radius: 6px;
-    border: 0;
-}
-
-/* Unstyle the area title bar */
-
-div[data-automation-id="Size"] div[data-automation-id="Header"], div[data-automation-id="Typography"] div[data-automation-id="Header"] {
-    background-color: transparent;
-    color: #4a4a4a;
-}
-
-/* Remove the bottom border of some areas */
-
-div [data-automation-id="Spacing"] > div:nth-child(2) + div, div [data-automation-id="Size"] > div:nth-child(2) + div, div [data-automation-id="Typography"] > div:nth-child(2) + div, div [data-automation-id="Position"] > div:nth-child(2) + div {
-    display: none;
-}
-
+/* ===== END of Import CSV stuff ===== */
