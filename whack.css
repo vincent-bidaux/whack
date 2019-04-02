@@ -217,8 +217,9 @@ div[coords="[object Object]"] {
     box-shadow:none;
     border-radius:0;
     width:401px;
-    height:425px
+    height:425px;
     display: grid;
+    z-index: 30;
     }
 
 /*  ===== CURRENT Styling somee areas in a different way ===== */
