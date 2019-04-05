@@ -7,41 +7,34 @@
 /* Gives a color to the W logo on top left in order to remember you're currently hacking the UI */
 
 .bem-DesignerLogo_Icon {
-    color: #81C784 ;
+    color: #81C784;
 }
-
 /* Removes the colored bg on labels */
 
 div[name] {
     background: none;
 }
-
 /* Increases the contrast of 4 ways Spacing and Position UI */
 
 path[cursor=w-resize] {
     color: #5e5e5e;
 }
-
 path[cursor=n-resize] {
     color: #2b2b2b;
 }
-
 path[cursor=s-resize] {
     color: #2b2b2b;
 }
-
 path[cursor=e-resize] {
     color: #5e5e5e;
 }
-
 /* Changes the labels: align them to the right, change their weight to 600 and their font to San Francisco */
 
-div[name=fontFamily], div[name=fontWeight], div[name=fontSize], div[name=lineHeight], div[name=colorLabel], div[name=textAlign], div[name=fontFamily], div[name=width], div[name=height], div[name=minWidth], div[name=minHeight], div[name=maxWidth], div[name=maxHeight], div[name=flex], div[name=alignSelf], div[name=order],div[name=display], div[name=flexDirection], div[name=alignItems], div[name=justifyContent], div[name=position], div[name=flexWrap], div[name=borderRadius], div[name=backgroundColor], div[name=overflow] {
+div[name=fontFamily], div[name=fontWeight], div[name=fontSize], div[name=lineHeight], div[name=colorLabel], div[name=textAlign], div[name=fontFamily], div[name=width], div[name=height], div[name=minWidth], div[name=minHeight], div[name=maxWidth], div[name=maxHeight], div[name=flex], div[name=alignSelf], div[name=order], div[name=display], div[name=flexDirection], div[name=alignItems], div[name=justifyContent], div[name=position], div[name=flexWrap], div[name=borderRadius], div[name=backgroundColor], div[name=overflow] {
     justify-self: right;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 600;
 }
-
 /* Changes the labels of the Effects areas */
 
 div[name=boxShadows], div[name=transforms], div[name=transitions], div[name=filters], div[name=opacity], div[name=cursor], div[name=border], div[name=textShadows], div[name=backgrounds] {
@@ -74,25 +67,21 @@ div[data-automation-id=Header] div {
     font-size: 11px;
     line-height: 11px;
 }
-
 /* Hide the PADDING and MARGIN all caps italics labels on the Spacing 4 ways UI */
 
 div[data-automation-id=Spacing] div svg text {
     display: none;
 }
-
 /* Zeroes the first column of the grid where we deleted labels, in Position section */
 
 div[data-automation-id=PositionBody] {
     grid-template-columns: 44px auto;
 }
-
 /* Adds a padding to the bottom of the panel */
 
 div [data-automation-id=Effects] {
     padding-bottom: 30px;
 }
-
 /* Adds textmoji symbol at the bottom of the panel */
 
 div [data-automation-id=Effects]::after {
@@ -100,21 +89,18 @@ div [data-automation-id=Effects]::after {
     margin: 0 auto;
     padding-top: 20px;
 }
-
 /* Adds a background color to the Background section */
 
 div [data-automation-id=Backgrounds] {
     background-color: #5D4037;
     padding: 0 0 0 0;
 }
-
 /* Adds a background color to the Typography section */
 
 div [data-automation-id=Typography] {
     background-color: #455A64;
     padding: 0 0 0 0;
 }
-
 /* Restyle the Effects panel to add variety */
 
 /* Enlarges the + buttons of the Effects areas of the Effects panel */
@@ -123,21 +109,18 @@ div [tooltip="Add drop shadow, inner or outer glow, or highlights"], div [toolti
     background-color: #616161;
     width: 50px;
 }
-
 /* Hides horizontal rulers */
 
-div[data-automation-id=Effects] > div:nth-child(2) > div:nth-child(3), div[data-automation-id=Effects] > div:nth-child(2) > div:nth-child(5), div[data-automation-id=Effects] > div:nth-child(2) > div:nth-child(7), div[data-automation-id=Effects] > div:nth-child(2) > div:nth-child(9), div[data-automation-id=Effects] > div:nth-child(2) > div:nth-child(11) {
+div[data-automation-id=Effects]>div:nth-child(2)>div:nth-child(3), div[data-automation-id=Effects]>div:nth-child(2)>div:nth-child(5), div[data-automation-id=Effects]>div:nth-child(2)>div:nth-child(7), div[data-automation-id=Effects]>div:nth-child(2)>div:nth-child(9), div[data-automation-id=Effects]>div:nth-child(2)>div:nth-child(11) {
     opacity: 0;
 }
-
 /* Box Shadows */
 
-div[data-automation-id=Effects] > div:nth-child(2) > div:nth-child(4) {
+div[data-automation-id=Effects]>div:nth-child(2)>div:nth-child(4) {
     background-color: #4f4f4f;
     border-radius: 4px;
     padding: 10px 10px 10px 10px;
 }
-
 /* Transforms */
 
 div[data-automation-id=Effects] div:nth-child(2) div:nth-child(6) {
@@ -145,7 +128,6 @@ div[data-automation-id=Effects] div:nth-child(2) div:nth-child(6) {
     border-radius: 4px;
     padding: 10px 10px 10px 10px;
 }
-
 /* Transitions */
 
 div[data-automation-id=Effects] div:nth-child(2) div:nth-child(8) {
@@ -153,43 +135,34 @@ div[data-automation-id=Effects] div:nth-child(2) div:nth-child(8) {
     border-radius: 4px;
     padding: 10px 10px 10px 10px;
 }
-
 /* filters */
 
-div[data-automation-id=Effects] > div:nth-child(2) > div:nth-child(10) {
+div[data-automation-id=Effects]>div:nth-child(2)>div:nth-child(10) {
     background-color: #4f4f4f;
     border-radius: 4px;
     padding: 10px 10px 10px 10px;
 }
-
 /* Moves Transforms area option button */
 
-div[data-automation-id=Effects] div[data-automation-id=Header] + div div:nth-child(6) div div:nth-child(2)[style] {
+div[data-automation-id=Effects] div[data-automation-id=Header]+div div:nth-child(6) div div:nth-child(2)[style] {
     right: 32px;
 }
-
-div[data-automation-id=Effects] div[data-automation-id=Header] + div div:nth-child(6) div div:nth-child(2)[draggable=true] {
+div[data-automation-id=Effects] div[data-automation-id=Header]+div div:nth-child(6) div div:nth-child(2)[draggable=true] {
     right: 0;
 }
-
 /* Changes the style of the sections's headers block */
 
-div[data-automation-id=Header] {
-}
-
+div[data-automation-id=Header] {}
 /* Set minimal opacity for the subhaders of the secondary areas */
 
 div[align=center] {
     opacity: 0.2;
 }
-
 /* Deactivates the max-height of the swatches palette to remove the scroll */
 
 div[data-automation-id=overlay] div div div div div:nth-child(3) {
     max-height: inherit;
 }
-
-
 /*  ===== LEFT panels styling ===== */
 
 /* Make the Pages panel larger */
@@ -197,57 +170,44 @@ div[data-automation-id=overlay] div div div div div:nth-child(3) {
 #designer-app-react-mount div div div.bem-LeftSidebarPanels div.bem-Panel div.bem-Pane {
     flex-basis: 600px;
 }
-
 /* Makes the Pages Links dropdown as tall as possible */
 
 .fancy-dropdown {
     max-height: none;
 }
-
 /* Makes the Navigator shorter to make room for the docked CSS Preview popup */
 
-div#right-sidebar + div {height: calc(100vh - 460px);}
+/* div#right-sidebar + div {height: calc(100vh - 460px);} */
 
-/* Docks the CSS Preview popup. Warning, need to inject JS to make the Navigator panel larger */
+/* Docks the CSS Preview popup */
 
 div[coords="[object Object]"] {
-    bottom:0;
-    top:inherit;
-    left:34px;
-    box-shadow:none;
-    border-radius:0;
-    width:401px;
-    height:425px;
+    bottom: 0;
+    top: inherit;
+    left: 34px;
+    box-shadow: none;
+    border-radius: 0;
+    width: 401px;
+    height: 425px;
     display: grid;
     z-index: 30;
-    }
-
-/*  ===== CURRENT Styling somee areas in a different way ===== */
-
-/* Make the area a round cornered magined thing */
-
-div [data-automation-id="Size"], div [data-automation-id="Typography"], div [data-automation-id="Positio"] {
-    background-color: #242424;
-    padding: 0px;
-    margin: 0 8px 8px 8px;
-    border-radius: 6px;
-    border: 0;
 }
-
-/* Unstyle the area title bar */
-
-div[data-automation-id="Size"] div[data-automation-id="Header"], div[data-automation-id="Typography"] div[data-automation-id="Header"] {
-    background-color: transparent;
-    color: #4a4a4a;
-}
-
 /* Remove the bottom border of some areas */
 
-div [data-automation-id="Spacing"] > div:nth-child(2) + div, div [data-automation-id="Size"] > div:nth-child(2) + div, div [data-automation-id="Typography"] > div:nth-child(2) + div, div [data-automation-id="Position"] > div:nth-child(2) + div {
+div [data-automation-id="Spacing"]>div:nth-child(2)+div, div [data-automation-id="Size"]>div:nth-child(2)+div, div [data-automation-id="Typography"]>div:nth-child(2)+div, div [data-automation-id="Position"]>div:nth-child(2)+div {
     display: none;
 }
+/* Shortens the devices' canvas */
 
-
+div.workspace.media-tiny>div.site-canvas>div>iframe#site-iframe-next {
+    height: 896px;
+}
+div.workspace.media-small>div.site-canvas>div>iframe#site-iframe-next {
+    height: 414px;
+}
+div.workspace.media-medium>div.site-canvas>div>iframe#site-iframe-next {
+    height: 1024px;
+}
 /*  ===== Specific for inmporting CSV data in CMS — adds padding to the bottom and enlarge drop down menus ===== */
 
 /* makes drop down menu taller */
@@ -275,3 +235,22 @@ div [data-automation-id="Spacing"] > div:nth-child(2) + div, div [data-automatio
 */
 
 /* ===== END of Import CSV stuff ===== */
+
+/*  ===== CURRENT Styling somee areas in a different way ===== */
+
+/* Make the area a round cornered magined thing */
+
+div [data-automation-id="Size"], div [data-automation-id="Typography"], div [data-automation-id="Positio"] {
+    background-color: #242424;
+    padding: 0px;
+    margin: 0 8px 8px 8px;
+    border-radius: 6px;
+    border: 0;
+}
+/* Unstyle the area title bar */
+
+div[data-automation-id="Size"] div[data-automation-id="Header"], div[data-automation-id="Typography"] div[data-automation-id="Header"] {
+    background-color: transparent;
+    color: #4a4a4a;
+}
+/*  ===== End of CURRENT Styling somee areas in a different way ===== */
