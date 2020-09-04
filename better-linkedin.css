@@ -1,0 +1,95 @@
+/* bye bye everything on the right and other things on the left, mostly things that are after your money */
+aside.right-rail, section.ad-banner-container.ember-view  {
+    display:none
+  }
+  
+  /* bye bye "you should give us access to your mail and adress book"! No I shouldn't, and you're cancer, cordialement bisous */
+  div.mn-abi-form__container.full-width.artdeco-card {
+    display:none
+  }
+  
+  /* bye bye fixed menu, bye bye 100vw width bug */
+  header.global-nav.global-alert-offset-top.global-nav--visibility-deferred.ember-view {
+    position:relative;
+    width:100%;
+  }
+  
+  /* bye bye things that look important but probably aren't at all */
+  a.mn-community-summary__abi.t-16.t-black.t-normal.ember-view, footer.global-footer-compact.ember-view, ul.discover-entity-list.ember-view {
+    display:none
+  }
+  
+  /* bye bye recommendation blocks */
+  ul.artdeco-card.mb4.overflow-hidden.ember-view, header.mn-discovery__header.artdeco-card__header {
+    display:none
+  }
+  
+  /*bye bye free trial ugly message */
+  a.link-without-visited-state.global-nav__primary-link.global-nav__primary-link--premium.nav-item__spotlight-upsell.premium-upsell-link--long.ember-view {
+    display:none
+  }
+  
+  /* bye bye products menu */
+  button.global-nav__primary-link.ember-view {
+    display:none
+  }
+  
+  /* bye bye linkedin logo */
+  li-icon.global-nav__logo {
+    display:none
+  }
+  
+  /* bye bye linkedin marketing solutions block */
+  div.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card.ember-view {
+    display:none
+  }
+  
+  /* bye bye more news block */
+  .feed-shared-update-v2__content.feed-shared-feed-discovery-grid.ember-view {
+    display:none
+  }
+  
+  /* bye bye saved items link */
+  a.feed-identity-module__anchored-widget.link-without-hover-state.pv2.ph3.text-align-left.ember-view {
+    display:none
+  }
+  
+  /* bye bye premium trial link and slogan */
+  a.link-without-visited-state.feed-identity-module__anchored-widget.feed-identity-module__anchored-widget--premium-upsell.t-12.t-black.t-bold.link-without-hover-state.text-align-left.premium-upsell-link--long.ember-view {
+    display:none
+  }
+  /* bye bye messenger popup window */
+  div.msg-overlay-list-bubble.msg-overlay-list-bubble--is-minimized.ml4 {
+    display:none
+  }
+  
+  /* bye bye navbar divider */
+  .global-nav__primary-item--divider {
+    display:none
+  }
+  
+  /* hello better looking navbar with search */
+  .global-nav__search {
+      flex-grow: 0;
+      margin-right:40px
+  }
+  
+  /* hello bg color that's actually not from the 90s */
+  header.global-nav.global-alert-offset-top.global-nav--visibility-deferred.ember-view {
+    background-color:#e4584c;
+  }
+  
+  /* hello decent top margin value for the content area */
+  .authentication-outlet {
+      margin-top: 30px;
+  }
+  
+  /* bye bye useless confirmation bottom left thingy */
+  li.artdeco-toast-item.artdeco-toast-item--visible.ember-view {
+    display:none
+  }
+  
+  /* bye bye groups and events left sidebar block */
+  div.artdeco-card.mb2.feed-shared-navigation-module.ember-view {
+    display:none
+  }
